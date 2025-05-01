@@ -18,7 +18,6 @@ function VideoPreview({ video, file }) {
 
     try {
       const response = await api.post("/upload-video", formData, {
-        baseURL: import.meta.env.VITE_VIDEO_API_URL,
         headers: { "Content-Type": "multipart/form-data" },
       });
 
