@@ -4,10 +4,10 @@ import ImageUpload from "/src/components/ImageUpload";
 import Loading from "/src/components/Loading";
 import ImageDetectionResult from "/src/components/ImageDetectionResult";
 import api from "../api.js";
-import useImageUpload from "/src/hook/UseImageUpload";
+import UseImageUpload from "/src/hook/UseImageUpload";
 
 function ImagePreview({ image, file }) {
-  const { newImageUpload, handleUploadNewButtonClick } = useImageUpload();
+  const { newImageUpload, handleUploadNewButtonClick } = UseImageUpload();
   const [detection, setDetection] = useState(false);
   const [imageDetectionResult, setImageDetectionResult] = useState(null);
 
