@@ -4,7 +4,7 @@ import VideoUpload from "/src/components/VideoUpload";
 import Loading from "/src/components/Loading";
 import VideoDetectionResult from "/src/components/VideoDetectionResult";
 import api from "../api.js";
-import UseVideoUpload from "../hook/UseVideoUpload.jsx";
+import UseVideoUpload from "/src/hook/UseVideoUpload";
 
 function VideoPreview({ video, file }) {
   const { newVideoUpload, handleUploadNewButtonClick } = UseVideoUpload();
