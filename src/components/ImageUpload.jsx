@@ -17,20 +17,6 @@ function ImageUpload() {
     fileInputRef.current.click();
   };
 
-  // const handleFile = (file) => {
-  //   if (file && file.type.startsWith("image/")) {
-  //     const url = URL.createObjectURL(file);
-  //     setImageURL(url); // Set URL to show preview
-  //     setImageUploaded(true);
-  //     setFile(file); // Store the file for later use
-  //     setErrorMessage(""); // clear any previous errro
-  //   } else {
-  //     setErrorMessage(
-  //       "Unsupported file format. Please upload a JPG, PNG, or JPEG file."
-  //     );
-  //   }
-  // };
-
   const handleFile = (file) => {
     if (file) {
       if (!file.type.startsWith("image/")) {

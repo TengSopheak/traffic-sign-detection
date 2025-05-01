@@ -1,7 +1,5 @@
 import Feature from "/src/components/Feature";
 import Footer from "/src/components/Footer";
-import VideoTesting from "/src/json/VideoTesting";
-import videoFile from "/src/assets/IMG_9816.MOV"; // Import the video file
 
 function Home() {
   return (
