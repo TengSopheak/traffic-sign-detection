@@ -1,11 +1,11 @@
 import { useEffect, useRef, useMemo } from "react";
-import useVideoUpload from "/src/hook/UseVideoUpload";
+import UseVideoUpload from "/src/hook/UseVideoUpload";
 import VideoUpload from "/src/components/VideoUpload";
 
 function VideoDetectionResult({ video, detections }) {
   const canvasRef = useRef(null);
   const videoRef = useRef(null);
-  const { newVideoUpload, handleUploadNewButtonClick } = useVideoUpload();
+  const { newVideoUpload, handleUploadNewButtonClick } = UseVideoUpload();
   const frameRate = 30; // Default frame rate, adjust if needed
 
   // Group predictions by frame

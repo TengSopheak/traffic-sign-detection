@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const useVideoUpload = () => {
+const UseVideoUpload = () => {
   const [newVideoUpload, setNewVideoUpload] = useState(false);
 
   const handleUploadNewButtonClick = () => {
@@ -10,4 +10,4 @@ const useVideoUpload = () => {
   return { newVideoUpload, handleUploadNewButtonClick };
 };
 
-export default useVideoUpload;
+export default UseVideoUpload;

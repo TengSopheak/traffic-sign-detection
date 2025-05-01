@@ -4,10 +4,10 @@ import VideoUpload from "/src/components/VideoUpload";
 import Loading from "/src/components/Loading";
 import VideoDetectionResult from "/src/components/VideoDetectionResult";
 import api from "../api.js";
-import useVideoUpload from "../hook/useVideoUpload.jsx";
+import UseVideoUpload from "../hook/UseVideoUpload.jsx";
 
 function VideoPreview({ video, file }) {
-  const { newVideoUpload, handleUploadNewButtonClick } = useVideoUpload();
+  const { newVideoUpload, handleUploadNewButtonClick } = UseVideoUpload();
   const [detection, setDetection] = useState(false);
   const [videoDetectionResult, setVideoDetectionResult] = useState(null);
 

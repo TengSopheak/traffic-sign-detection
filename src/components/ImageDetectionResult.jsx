@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
 
 import ImageUpload from "/src/components/ImageUpload";
-import useImageUpload from "/src/hook/UseImageUpload";
+import UseImageUpload from "/src/hook/UseImageUpload";
 
 function ImageDetectionResult({ image, detections }) {
   const canvasRef = useRef(null);
-  const { newImageUpload, handleUploadNewButtonClick } = useImageUpload();
+  const { newImageUpload, handleUploadNewButtonClick } = UseImageUpload();
 
   useEffect(() => {
     const img = new Image();
