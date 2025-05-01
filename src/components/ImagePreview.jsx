@@ -18,7 +18,7 @@ function ImagePreview({ image, file }) {
 
     try {
       const response = await api.post("/upload-image", formData, {
-        baseURL: import.meta.env.VITE_IMAGE_API_URL,
+        baseURL: import.meta.env.VITE_BACKEND_API_URL, // remove this when testing locally
         headers: { "Content-Type": "multipart/form-data" },
       });
       setImageDetectionResult(response.data);
